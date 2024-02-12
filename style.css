@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap')
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto Slab;
+    color: #777;
+}
+
+html , body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+  margin: 0;  
+}
+
+.nav li{
+    display: inline; 
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em; /* font is larger when you hover over it */
+    font-weight: lighter; 
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li{
+    padding: 0 5%; /*spaces out the li elements in main-nav class*/
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-header{
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    padding-bottom: 45px;
+    height: 435px;
+    width: auto;
+}
+
+.title{
+    text-align: center;
+    margin: 0; /* element gets squished closer together*/
+    font-size: 3.5em;
+    font-family: Cinzel;
+    color: beige;
+}
+
+.title-large {
+    color: rgba(209, 205, 187, 0.771);
+    font-size: 7em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: Manrope;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+
+.about-huskies {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%; /* creates a circular picture */
+}
+
+.main-footer{
+    background-color: rgb(201, 197, 140);
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1; /*tells element to grow  */
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center; /* text is centered */
+    vertical-align: middle; /* text is aligned in the middle of button box*/
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: 1em 45%;
+    color: bisque;
+    border: 2px solid rgba(188, 213, 149, 0.803);
+    background-color:rgba(255, 255, 255, .1) ;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color: darkolivegreen;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+}
+
+.picture-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.picture-row:last-child{ /*styling only applies to last element in picture row*/
+    border-bottom: none;
+}
+
+.picture-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.picture-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.picture-city {
+    width: 24%;
+}
+
+.description{
+    width: 42%;
+}
+
+.picture-btn{
+    max-width: 19%;
+}
+
+.btn-primary{
+    color: white;
+    background-color: rgb(130, 148, 99);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: darkolivegreen;
+}
